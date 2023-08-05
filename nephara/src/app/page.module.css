@@ -1,0 +1,187 @@
+.Home {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../public/nepharaBg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 70% center;
+  display: flex;
+  flex-direction: column;
+}
+
+.HomeTitle {
+  font-family: 'Alegreya', serif;
+  color: rgb(255, 255, 255);
+  margin: 10% 0 3rem 15%;
+  font-size: 4rem;
+}
+
+.HomeTitle i {
+  display: inline-block;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+}
+
+
+.HomeTitle i:hover {
+  transform: translateY(-12px);
+}
+
+
+.HomeDescription {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.HomeDescription h6 {
+  font-size: 2.5rem;
+  margin: 0 0 0 30%;
+  color: rgb(255, 255, 255);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+.HomeDescriptionParagraph {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 300;
+  margin: 1.5rem 0 0 30%;
+}
+
+.HomeDescriptionParagraphSecond {
+  color: white;
+  font-size: 1rem;
+  margin: 5rem 0 0 30%;
+}
+
+.HomeDescription input {
+  background-color: transparent;
+  outline: none;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+  box-sizing: content-box;
+  height: 35px;
+  width: 15rem;
+  margin: 0 0 1rem 30%;
+
+}
+
+.HomeDescription input:focus,
+
+.HomeDescription input:hover {
+  border-bottom: 3px solid white;
+}
+
+.HomeDescription {}
+
+.HomeDescription button {
+  height: 2.2rem;
+  width: 15rem;
+  border-radius: 0px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-family: 'Tektur', cursive;
+  font-weight: 600;
+  margin: 0 0 0 30%;
+}
+
+.HomeDescription button:hover {
+  cursor: pointer;
+  background-color: rgb(77, 77, 77);
+  color: aliceblue;
+}
+
+/* for tablet screens */
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .HomeTitle {
+    margin: 3rem 0 0 10%;
+  }
+
+  .HomeDescriptionParagraph,
+
+  .HomeDescription h6 {
+    margin: 3rem 0 0 15%;
+  }
+
+  .HomeDescriptionParagraphSecond{
+    margin: 2rem 0 0 15%;
+  }
+  .HomeDescription input,
+  .HomeDescription button {
+    margin: 1rem 0 0 15%;
+
+  }
+}
+
+/* for mobile screens */
+@media screen and (min-width: 100px) and (max-width: 599px) {
+  .Home {
+    position: relative;
+    background-image: url('../../public/nepharaBg.webp');
+    font-size: 10px;
+    background-size: cover;
+    background-position: 100% center;
+    z-index: -1;
+  }
+
+  .HomeTitle {
+    z-index: 1;
+    margin: 3rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Layer {
+    /* Add your styles for the layer here */
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    /* Set a higher z-index value than the .Home element */
+  }
+
+  .HomeDescription {
+    width: 100vw;
+
+    align-items: center;
+    z-index: 1;
+  }
+
+  .HomeDescription h6 {
+    font-size: 1.3rem;
+    font-weight: 800;
+
+    margin: 4rem 0 0 0;
+  }
+
+  .HomeDescriptionParagraph {
+    font-size: 0.8rem;
+    margin: 0.5rem 0 0 0;
+  }
+  .HomeDescriptionParagraphSecond{
+    margin: 5rem 0 0 0;
+  }
+
+  .HomeDescription input{
+    margin: 0.5rem 0 0 0;
+    height: 25px;
+  }
+  .HomeDescription button {
+
+    margin: 1rem 0 0 0;
+    z-index: 2;
+  }
+}

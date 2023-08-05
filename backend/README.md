@@ -1,0 +1,3 @@
+-Responsive Landing Page
+-Firestore to store emails
+-Nodemailer to send signing up email
